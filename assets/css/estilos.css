@@ -1,0 +1,1130 @@
+*{
+     font-family: "Inter", sans-serif;
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     
+    
+}
+body{
+}
+/*VARIABLES*/
+:root{
+  
+
+    /* colores */
+    --grisfondo: #292929;
+    --azulprimario: #535EFB;
+    --azulprimariohover:#7E87FF;
+    --blanco:#fff;
+    --gristitulos: #00264B;
+    --grisparrafos: #4A4A4A;
+    --grisbordes: #D8D8D8;
+
+    /* espaciados */
+    --space4: 0.25rem;
+    --space8: 0.5;
+    --space12: 0.75rem;
+    --space16: 1rem;
+    --space20: 1.25rem;
+    --space24: 1.5rem;
+    --space28: 1.75rem;
+    --space32: 2rem;
+    --space36: 2.25rem;
+    --space40: 2.5rem;
+    --space44: 2.75rem;
+    --space48: 3rem;
+    --space52: 3.25rem;
+    --space56: 3.5rem;
+
+}
+
+/* TIPOGRAFIA DESKTOP */
+h1 {
+    font-size: 2.75rem;
+    /*TAMAÑO*/
+    font-weight: 700;
+    /*BOLD*/
+    line-height: 40px;
+    width: 85%;
+    margin: 0;
+    
+}
+h2 {
+    font-size: 1.75rem;
+    /*TAMAÑO*/
+    font-weight: 600px;
+    /*BOLD*/
+    line-height: 2.5rem;
+
+}
+h3 {
+    font-size: 1.5rem;
+    /*TAMAÑO*/
+    font-weight: 600px;
+    /*BOLD*/
+    line-height: 2.25rem;
+
+}
+h4 {
+    font-size: 1.25rem;
+    /*TAMAÑO*/
+    font-weight: 600;
+    /*BOLD*/
+    line-height: 2rem;
+
+}
+p{
+    font-size: 1rem;
+    /*TAMAÑO*/
+    font-weight: 400;
+    /*BOLD*/
+    line-height: 27px;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* HEADER */
+
+header{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1440px ;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 39px;
+    align-items:center;
+    justify-content:space-between;
+    margin-left: var(--space52);
+    margin-right: var(--space52);
+}
+header a{
+    color: var(--blanco);
+}
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+    list-style: none;
+}
+nav li{
+    padding: 20px 8px;
+}
+
+nav li :hover{
+    padding: 20px 8px;
+    border-bottom: 2px solid var(--azulprimario) ;
+    
+}
+.menumobile{
+    display: none;
+}
+
+/* BOTONES */
+.btn{
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    height: 43px;
+    width: auto;
+    padding: 1.25rem;
+    text-decoration: none;
+    padding: 8px 32px;
+    display: inline-block;
+}
+.btnprimario{
+    background-color: var(--azulprimario);
+    color: var(--blanco);
+}
+.btnsecundario{
+    background-color: transparent;
+    color: var(--blanco);
+    border: 1px solid var(--blanco);
+}
+.btnprimario:hover{
+    background-color: var(--azulprimariohover);
+    color: var(--gristitulos);
+
+}
+.btnsecundario:hover{
+    background-color: var(--blanco);
+    color: var(--azulprimario);
+}
+
+/* FONDO IMAGEN OPACO*/
+.opaco{
+    width: 100%;
+    height: 100%;
+    background-color:#292929d2; /* en el figma no pille el nivel de transparencia*/
+    
+}
+
+/* CABEZA DE PAGINA*/
+
+.inicio{
+    background-image:url("../img/fondo.png");
+    background-size: cover;
+    background-attachment: fixed; /* este le hace un efecto bacan a la imagen, un detalle de mi parte*/
+    width: 100%;
+    height: 696px;
+    padding: 0;
+
+}
+.textoinicio{
+    display: flex;
+    width: 45%;
+    gap:24px;
+    flex-direction: column;
+    position: absolute;
+    margin-top: 17%;
+    margin-left: 15%;
+    color: var(--blanco);
+}
+.inicio .btnprimario{
+    align-self: flex-start;
+}
+
+/* SECCION UNO: CATEGORIAS */
+
+section{
+    padding: 73px 52px;
+    
+}
+
+.categorias{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.categorias h2 {
+    color: var(--gristitulos);
+    margin-bottom: 58px;
+}
+.categorias img {
+    height: 64px;
+    width: 64px;
+
+}
+.categorias a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 64px;
+    width: 328px;
+    gap: var(--space20);
+    color: var(--blanco);
+}
+.reseñas{
+    background-image: url(../img/seccion2/reseñas.png);
+   
+}
+.detras{
+    background-image: url(../img/seccion2/detras.png);
+
+}
+.especiales{
+    background-image: url(../img/seccion2/especiales.png);
+   
+}
+.entrevistas{
+    background-image: url(../img/seccion2/entrevistas.png);
+   
+}
+
+.categorias-grid div {
+   display: flex;
+    padding: 64px 164px;
+    width: 656px;
+    height: 164px;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+}
+.categorias-grid div .opaco:hover {
+background-color: var(--azulprimario);
+}
+
+.categorias-grid{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--space24);
+    
+}
+
+/* SECCION DOS: ARTICULOS */
+
+.articulos{
+    background-color: var(--azulprimario);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 52px;
+
+    
+}
+.articulos h2{
+    color: var(--blanco);
+}
+
+.articulos div{
+    display: flex;
+    flex-direction: row;
+    gap: var(--space24);
+    flex-wrap: wrap;
+    
+}
+
+.articulos article {
+    display: flex;
+    flex-direction: column;
+    width: 429px;
+    height: 492px;
+    gap: var(--space16);
+    padding: var(--space16);
+    border: 1px solid var(--azulprimariohover);
+    color: var(--blanco);
+   
+}
+
+.articulos article:hover{
+background-color: var(--blanco);   
+color: var(--gristitulos);   /* por alguna razon que desconozco no se cambia el color de la letra :( */
+}
+.articulos article:hover a{  
+color: var(--gristitulos); /* aqui ya descubri como se haciaa */    
+}
+
+.articulos a{  
+    color: var(--blanco);
+}
+
+/* SECCION TRES: ACERCA DE MI */
+
+.tiomike h2{
+   
+    color: var(--gristitulos);
+}
+.tiomike div h3{
+    color: var(--gristitulos);
+}    
+.tiomike div p{
+    color: var(--grisparrafos);
+}
+.tiomike{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 72px;
+    align-content: center;
+    margin: auto;
+
+    
+    
+}
+
+.tiomike img {
+    width: 158px;
+height: 158px;
+}
+
+.tiomike article {
+    display: flex;
+    flex-direction: row;
+    gap: 67px ;
+    margin-bottom: 99px;
+    
+
+}
+.descripcion{
+    display: flex;
+    flex-direction: column;
+    gap: var(--space16);
+}
+
+/* SUSCRIPCION */
+
+.suscribete{
+    background-color: var(--grisbordes);
+    color: var(--gristitulos);
+    display: flex;
+    justify-content: center;
+}
+
+.suscribete div{
+width: 50%;
+display: flex;
+align-items: center;
+flex-direction: column;
+gap: 32px;
+}
+.suscribete div p{
+    text-align: center;
+}
+form{
+    width: 100%;
+    gap: 0;
+    
+
+}
+form input{
+    width: 76%;
+    padding: 12px 24px ;
+    border: none;
+}
+button{
+    width: 24%;
+    border: none;
+}
+
+/* FOOTER */
+
+footer{
+    background-color: var(--grisfondo);
+    color: #B1B1B1;
+    display: flex;
+    flex-direction: column;
+    padding: 64px 52px;
+}
+.contenedor{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+.navfooter{
+    width: 33%;
+}
+
+.navfooter div{
+    width:50%;
+}
+
+.cineverso{
+    width: 425px;
+    display: flex;
+    color: #B1B1B1;
+    flex-direction: column;
+    gap: var(--space24);
+}
+.cineverso img{
+width: 129.024px;
+height: 25.2px;
+}
+menu{
+    width: 203px;
+
+}
+.menu h3{
+    color: var(--blanco);
+    margin-bottom: 21px;
+}
+
+.categoriasfooter{
+    width: 203px;
+}
+.categoriasfooter h3{
+    color: var(--blanco);
+    margin-bottom: 21px;
+}
+
+.navfooter{
+    display: flex;
+    flex-direction: row;
+    gap: var(--space24);
+}
+.navfooter ul li{
+    list-style: none;
+    width: 203px;
+}
+.redes{
+    display: flex;
+    flex-direction: row;
+    gap: var(--space12);
+}
+.contenedor li a{
+    color: var(--blanco);
+}
+.contenedor li a:hover{
+    text-decoration: underline;
+    color: #535EFB;
+}
+
+ .categoriasfooter ul li {
+    width: 100%;
+ }
+.menu ul li {
+    width: 100%;
+}
+
+
+
+/* PRIMERA PAGINA LISTAAAA */
+
+
+/* ACERCA DE CINEVERSO */
+
+.cabecera{
+    padding: 140px 52px 29px 52px;
+    background-color: var(--grisfondo);
+    color: var(--blanco);
+    
+    }
+
+.subrayado{
+       border-bottom: 2px solid var(--azulprimario) ;
+}
+.pan{
+    margin: 33px 52px;
+    color: var(--grisparrafos);
+    margin-bottom: 0;
+    
+   
+}
+
+.openhaimer{
+    display: flex;
+    flex-direction: row;
+    gap: 70px;
+    padding-bottom: 106px;
+
+}
+
+.openhaimer p{
+    color: var(--grisparrafos);
+
+}
+
+.openhaimer div{
+    gap: 6px;
+    line-height: 0.0;
+}
+
+.openhaimer div iframe {
+    width: 100%;
+    height: 100%;
+    flex-shrink: 1;
+    /* aqui intente que el ifram se achicara, pero no funcionaba :/ */
+width: 656px;
+height: 373px;
+
+}
+
+/* BLOG */
+
+.blog .categorias-grid div {
+    width: 656px;
+    height: 114px;
+
+}
+
+.blog{
+    color: var(--grisparrafos);
+    display: flex;
+    align-items: start;
+    gap: 47px;
+}
+
+.white{
+   padding-top: 0;
+    background-color: var(--blanco);
+   
+}
+.white article{
+     border-color: var(--grisbordes);
+     color: var(--gristitulos);
+}
+
+.blue{
+    color: var(--azulprimario);
+}
+
+.white article a{
+    color: var(--azulprimario);
+}
+
+/* aqui me di cuenta que hubiera sido mucho mas facil crear un contenedor base */
+
+.white article:hover{
+    background-color: var(--azulprimario);
+    color: var(--blanco);
+}
+
+.white article:hover a{
+    background-color: var(--azulprimario);
+    color: var(--blanco);
+}
+
+.white article:hover .blue{
+    background-color: var(--azulprimario);
+    color: var(--blanco);
+}
+
+ a.btnfeo{
+    color: var(--azulprimario);
+}
+a.btnfeo:hover {
+    text-decoration: underline;
+}
+
+/* CONTACTOO */
+.seccioncontacto{
+    display: flex;
+    justify-content: center;
+}
+.contacto{
+    display: flex;
+    flex-direction: column;
+    gap: var(--space32);
+     color: var(--grisparrafos);
+     width: 50%;
+   
+}
+
+
+.contacto input{
+    border: 1px solid var(--grisbordes);
+    width: 100%;
+    margin-top: 12px;
+
+}
+
+.contacto form  {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+form .mensaje{
+   
+    padding-bottom: 142px;
+    
+    
+}
+
+.contacto form button{
+     align-self: flex-start;
+}
+
+textarea {
+    padding: 12px 24px ;
+    width: 100%;
+    border: 1px solid var(--grisbordes);
+
+}
+
+.mensaje {
+    margin-top: 12px;
+}
+
+.blog {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* DETALLE */
+.donjaime{
+    display: flex;
+    justify-content: center;
+   
+}
+
+
+.jaime {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 57%;
+    
+
+}
+.don{
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+.jai{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.jai h1{
+    margin: 0;
+}
+.me{
+
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+}
+
+h1{
+  padding: 0;
+}
+
+/* TERMINADA LA VERSION DESK */
+
+
+/* VERSION TABLET */
+
+@media screen and (max-width:1440px) {
+
+
+    /* TAMAÑO MOBILE-TABLET */
+h1 {
+    font-size: 2rem;
+    /*TAMAÑO*/
+    font-weight: 700;
+    /*BOLD*/
+    line-height: 3rem;
+}
+h2 {
+    font-size: 1.5rem;
+    /*TAMAÑO*/
+    font-weight: 600px;
+    /*BOLD*/
+    line-height: 2.25rem;
+
+}
+h3 {
+    font-size: 1.25rem;
+    /*TAMAÑO*/
+    font-weight: 600px;
+    /*BOLD*/
+    line-height: 2rem;
+
+}
+h4 {
+    font-size: 1rem;
+    /*TAMAÑO*/
+    font-weight: 600;
+    /*BOLD*/
+    line-height: 1.75rem;
+
+}
+p{
+    font-size: 1rem;
+    /*TAMAÑO*/
+    font-weight: 400;
+    /*BOLD*/
+    line-height: 1.75rem;
+}
+
+/* BOTONES */
+
+
+
+
+ section{
+    padding: 64px 40px;
+    
+}
+
+  
+ header {
+    margin-left: 40px ;
+    margin-right: 40px;
+ }
+
+ header section {
+    justify-content: center;
+    margin: auto;
+ }
+
+ .inicio{
+    margin: auto;
+    display: flex;
+   align-items: center;
+   height: 577px;
+ }
+
+ .textoinicio{
+    display: flex;
+    width: 45%;
+    gap:24px;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    justify-self: center;
+    justify-content: center;
+    margin-left: 0;
+    padding: 24px;
+
+}
+
+.textoinicio .btn {
+justify-content: center;
+    align-items: center;
+    align-content: center;
+    height: 43px;
+    width: auto;
+    padding: 1.25rem;
+    margin: auto;
+    
+    padding: 8px 32px;
+    
+
+}
+
+.textoinicio p {
+    text-align: center;
+
+}
+
+.textoinicio h1{
+    text-align: center;
+   }
+
+.categorias-grid{
+    flex-direction: row;
+    justify-content: center;
+    gap: 17px;
+    
+    
+}
+.categorias-grid div {
+    width: 222px ;
+    height: 116px ;
+    padding: 52px;
+    
+    
+}
+
+.articulos div {
+    flex-direction: column;
+}
+
+.articulos article {
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    align-items: flex-start;
+}
+
+.tiomike {
+    width: 90%;
+}
+
+.suscribete div {
+    width: 70%;
+
+}
+.openhaimer{
+    width: 100%;
+}
+
+.openhaimer iframe {
+   width: 468px;
+height: 266px;
+}
+.openhaimer p {
+    width: 50%;
+}
+
+
+.blog {
+    align-items: center;
+}
+
+.blog .categorias-grid{
+    flex-direction: row;
+    
+    gap: 17px;
+    
+}
+
+.blog .categorias-grid div {
+    width: 222px ;
+    height: 116px ;
+    padding: 52px;
+    
+    
+}
+
+.contacto {
+    width: 60%;
+
+    
+}
+
+.contacto .btn {
+    width: 50%;
+}
+
+.donjaime{
+    width: 100% ;
+}
+
+}
+
+@media screen and (max-width: 1024px){
+
+    .blog {
+    align-items: center;
+}
+
+    header {
+        margin-left: var(--space24);
+        margin-right: var(--space24);
+    }
+
+    .menumobile{
+         display: block;
+         margin-right: 5px;
+    }
+    header nav ul li {
+        display: none;
+    }
+
+    .openhaimer {
+        flex-direction: column;
+    }
+
+    .openhaimer p {
+        width: 100% ;
+    }
+
+    .openhaimer div frame {
+        width: 100%;
+        height: auto;
+    }
+
+}
+
+/* VERSION MOVIL */
+@media screen and (max-width: 900px){
+
+.pan{
+    margin-left: 24px;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 43px;
+    width: 100%;
+    padding: 1.25rem;
+    text-decoration: none;
+    align-self: stretch;
+    max-width: 100%;
+    
+
+}
+
+
+ .inicio{ 
+    
+    width: 100%;
+    height: 648px;
+    background-size: contain;
+
+
+}
+section{
+    padding: 48px 24px;
+    
+}
+
+.textoinicio{
+    padding-top: 30%;
+    width: 95%;
+}
+
+.textoinicio .btn {    
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 43px;
+    width: 100%;
+    padding: 1.25rem;
+    text-decoration: none;
+    align-self: stretch;
+    max-width: 100%;
+}
+
+.categorias-grid div {
+width: 161px;
+height: 152px;
+display: flex;
+flex-direction: row;
+text-align: center;
+gap: 0;
+padding: 52px;
+
+}
+
+.categorias-grid div a {
+display: flex;
+flex-direction: column;
+padding: 11px 17px;
+gap: 9px;
+
+}
+.categorias-grid {
+    
+    flex-direction: row;
+    gap: 17px;
+}
+
+.categorias-grid div img {
+width: 44px;
+height: 44px;
+
+
+}
+
+.articulos article {
+    flex-direction: column;
+    width: 100%;
+    
+}
+.articulos article img {
+    height: 176.063px;
+    width: 100%;
+   
+}
+
+.tiomike article {
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    
+}
+
+.tiomike {
+    gap: 40px;
+}
+
+.formulario input {
+    width: 100%;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+ h2 {
+    text-align: center;
+}
+ .contenedor {
+      display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap:44px;
+   
+ }
+
+ .contenedor p {
+    width: 100%;
+    
+   
+ }
+ .cineverso{
+    width: 100%;
+ }
+
+ footer {
+    width: 100%;
+    padding: 24px ;
+    gap:44px;
+ }
+
+ .navfooter {
+    width: 100%;
+    gap: 15px;
+ }
+
+ .suscribete div {
+       width: 100%;
+ }
+
+.openhaimer div iframe {
+        width: 345px;
+        height: 197px;
+    }
+
+.cabecera {
+   padding-left: 24px;
+}
+
+.blog .categorias-grid{
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 17px;
+}
+
+.blog .categorias-grid div {
+    width: 161px;
+height: 152px;
+    padding: 52px;
+    
+    
+}
+ 
+.contacto {
+    width: 100%;
+}
+
+.contacto .btn{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 43px;
+    width: 100%;
+    padding: 1.25rem;
+    text-decoration: none;
+    align-self: stretch;
+    max-width: 100%;
+
+} 
+
+.jaime{
+    width: 100%;
+   
+}
+
+.blog {
+    align-items: center;
+}
+
+/* TERMINAAADOOO */
+
+}
+
+
+/* podria haberme ahorrado bastantes codigos? yep... pero me enrredaba mucho  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
